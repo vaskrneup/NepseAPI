@@ -1,0 +1,135 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:Valid url https://www.google.com !
+INFO:root:Grabbed data for https://www.google.com
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:Valid url https://www.google.com !
+INFO:root:Grabbed data for https://www.google.com !
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:root:Valid url https://www.google.com !
+INFO:root:Grabbed data for https://www.google.com !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-2020&stock-symbol=&_limit=500 HTTP/1.1" 200 88892
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-2020&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-2020&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-2020&stock-symbol=&_limit=500 HTTP/1.1" 200 88892
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-2020&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-2020&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 HTTP/1.1" 200 206162
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-5&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-7&stock-symbol=&_limit=500 HTTP/1.1" 200 88805
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-7&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-7&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-18&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-18&stock-symbol=&_limit=500 HTTP/1.1" 200 209080
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-18&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-18&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 HTTP/1.1" 200 208341
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-21&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-21&stock-symbol=&_limit=500 HTTP/1.1" 200 88834
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-21&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-21&stock-symbol=&_limit=500 !
+WARNING:root:Market seems to be closed in 2020-02-21 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-22&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-22&stock-symbol=&_limit=500 HTTP/1.1" 200 88834
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-22&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-22&stock-symbol=&_limit=500 !
+WARNING:root:Market seems to be closed in 2020-02-22 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-23&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-23&stock-symbol=&_limit=500 HTTP/1.1" 200 207181
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-23&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-23&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed data for http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 HTTP/1.1" 200 208341
