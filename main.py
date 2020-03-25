@@ -206,13 +206,18 @@ def get_nepse_data_for_date(date: str = ""):
     :param date: dd/mm/yyyy
     :return: dict
     """
-    if date:
-        return get_nepse_data(date, date)
-    else:
-        date = str(datetime.date.today()).split("-")
-        date.reverse()
-        date = "-".join(date)
-        return get_nepse_data(date, date)
+    try:
+        if date:
+            return get_nepse_data(date, date)
+        else:
+            date = str(datetime.date.today()).split("-")
+            date.reverse()
+            date = "-".join(date)
+            logger(f"No predefined date found, using today's date: '{date}' !", log_type="war")
+            return get_nepse_data(date, date)
+    except Exception as e:
+        logger(f"Fatal error at get_nepse_data_for_date() --> {e}", log_type="war")
+        return None
 
 
 if __name__ == "__main__":
