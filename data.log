@@ -380,3 +380,239 @@ INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=20
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
 DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
 WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 177
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be open in 2020-02-19 !
+WARNING:root:--------------------------------------------------------
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 HTTP/1.1" 200 208341
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500'
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 177
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be open in 2020-02-19 !
+WARNING:root:--------------------------------------------------------
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500'
+WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 177
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be open in 2020-02-19 !
+WARNING:root:--------------------------------------------------------
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 HTTP/1.1" 200 208341
+WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 177
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be open in 2020-02-19 !
+WARNING:root:--------------------------------------------------------
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 177
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be open in 2020-02-19 !
+WARNING:root:--------------------------------------------------------
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 HTTP/1.1" 200 208341
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-20&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 180
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be open in 2020-02-20 !
+WARNING:root:--------------------------------------------------------
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-21&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-21&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+WARNING:root:CTRL C  pressed !

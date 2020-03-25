@@ -137,62 +137,72 @@ def get_nepse_data(start_date, end_date) -> dict:
     :param end_date: dd-mm-yyyy
     :param start_date: dd-mm-yyyy
     """
-    logger(f"Splitting date !")
-    start_date = start_date.split("-")
-    end_date = end_date.split("-")
+    try:
+        logger(f"Splitting date !")
+        start_date = start_date.split("-")
+        end_date = end_date.split("-")
 
-    logger(f"Creating datetime object !")
-    start_date = datetime.date(day=int(start_date[0]), month=int(start_date[1]), year=int(start_date[2]))
-    end_date = datetime.date(day=int(end_date[0]), month=int(end_date[1]), year=int(end_date[2]))
+        logger(f"Creating datetime object !")
+        start_date = datetime.date(day=int(start_date[0]), month=int(start_date[1]), year=int(start_date[2]))
+        end_date = datetime.date(day=int(end_date[0]), month=int(end_date[1]), year=int(end_date[2]))
 
-    if start_date > end_date:
-        logger("start date is greater than end date !", log_type="err")
-        raise ValueError("Start date is greater then end date !")
+        if start_date > end_date:
+            logger("start date is greater than end date !", log_type="err")
+            raise ValueError("Start date is greater then end date !")
 
-    else:
-        # for increasing date by 1 day in every loop !
-        delta = datetime.timedelta(days=1)
+        else:
+            # for increasing date by 1 day in every loop !
+            delta = datetime.timedelta(days=1)
 
-        final_data = {}
+            final_data = {}
 
-        # using all other functions create data in json format !
-        logger(f"Started creating link for every single date !")
-        while start_date <= end_date:
-            try:
-                # create source url !
-                link = f"http://nepalstock.com.np/todaysprice?startDate=" \
-                       f"{start_date.year}-{start_date.month}-{start_date.day}" \
-                       f"&stock-symbol=&_limit=500"
-                # grab soup for that url !
-                logger(f"Grabbing soup !")
-                soup = get_soup(link)
-                logger(f"Soup grabbed !")
-                # get company data from soup !
-                logger(f"getting parsed nepse data !")
-                data = parse_nepse_data(soup=soup)
-                logger(f"got parsed nepse data !")
+            # using all other functions create data in json format !
+            logger(f"Started creating link for every single date !")
+            while start_date <= end_date:
+                try:
+                    # create source url !
+                    link = f"http://nepalstock.com.np/todaysprice?startDate=" \
+                           f"{start_date.year}-{start_date.month}-{start_date.day}" \
+                           f"&stock-symbol=&_limit=500"
+                    # grab soup for that url !
+                    logger(f"Grabbing soup !")
+                    soup = get_soup(link)
+                    logger(f"Soup grabbed !")
+                    # get company data from soup !
+                    logger(f"getting parsed nepse data !")
+                    data = parse_nepse_data(soup=soup)
+                    logger(f"got parsed nepse data !")
 
-                # check if market was open on that date !
-                if data:
-                    logger(f"Market seems to be open in {str(start_date)} !", log_type="war")
-                    final_data[str(start_date)] = {"16:00:00": data}
-                else:
-                    logger(f"Market seems to be closed in {str(start_date)} !", log_type="war")
+                    # check if market was open on that date !
+                    if data:
+                        logger(f"Market seems to be open in {str(start_date)} !", log_type="war")
+                        final_data[str(start_date)] = {"16:00:00": data}
+                    else:
+                        logger(f"Market seems to be closed in {str(start_date)} !", log_type="war")
 
-                # increment date by 1 day !
-                start_date += delta
-                logger("--------------------------------------------------------", log_type="war")
-            except KeyboardInterrupt:
-                logger("CTRL C  pressed !", log_type="war")
-                return final_data
-            except Exception as e:
-                logger("--------------------------------------------------------", log_type="err")
-                logger(f"Fatal error in LOOP 'while start_date <= end_date' @get_nepse_data() -->  {e}", log_type="err")
-                logger("--------------------------------------------------------", log_type="err")
+                    # increment date by 1 day !
+                    start_date += delta
+                    logger("--------------------------------------------------------", log_type="war")
+                except KeyboardInterrupt:
+                    logger("CTRL C  pressed !", log_type="war")
+                    return final_data
+                except Exception as e:
+                    logger("--------------------------------------------------------", log_type="err")
+                    logger(f"Fatal error in LOOP 'while start_date <= end_date' @get_nepse_data() -->  {e}",
+                           log_type="err")
+                    logger(f"skipping last url !", log_type="war")
+                    logger("--------------------------------------------------------", log_type="err")
 
-        logger(f"Returned final data for --> {str(start_date)} !", log_type="war")
-        return final_data
+            logger(f"Returned final data for --> {str(start_date)} !", log_type="war")
+            return final_data
+    except Exception as e:
+        logger("--------------------------------------------------------", log_type="err")
+        logger(f"Fatal Error in get_nepse_data() --> {e}", log_type="err")
+        logger("--------------------------------------------------------", log_type="err")
 
 
-_ = get_nepse_data("19-02-2020", "23-02-2020")
-print(_)
+try:
+    _ = get_nepse_data("19-02-2020", "23-02-2020")
+    print(_)
+except:
+    print("ERROR")
