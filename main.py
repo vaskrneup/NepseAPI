@@ -25,18 +25,22 @@ logging.basicConfig(filename='data.log', level=logging.DEBUG, filemode="a")
 
 
 # for logging messages #easier !
-def logger(msg, log_type="msg", output=True):
+def logger(msg, log_type="msg", output=True, log=True):
     if log_type == "msg":
         if output:
             print(crayons.green(f"[+] {msg}"))
-        logging.info(msg)
+        if log:
+            logging.info(msg)
     elif log_type == "war":
         if output:
             print(crayons.yellow(f"[!] {msg}"))
-        logging.warning(msg)
+        if log:
+            logging.warning(msg)
     elif log_type == "err":
         if output:
             print(crayons.red(f"[-] {msg}"))
+        if log:
+            logging.error(msg)
 
 
 # grabs html from requested url !
@@ -48,7 +52,7 @@ def get_html(url: str) -> str or None:
         if req.status_code == 200:
             logger(f"Valid url {url} !")
 
-            logger(f"Grabbed data for {url} !")
+            logger(f"Grabbed HTML text from {url} !")
             return req.text
         else:
             return None
@@ -61,15 +65,21 @@ def get_html(url: str) -> str or None:
 # takes url and returns soup using get_html() !
 def get_soup(url: str) -> BeautifulSoup:
     try:
+        logger(f"Running get_html(url) with URL: '{url}' !")
         html_text = get_html(url)
         if html_text:
+            logger(f"HTML_TEXT length valid !")
+            logger(f"Creating soup for '{url}'")
             soup = BeautifulSoup(html_text, "lxml")
+            logger(f"Soup Created for '{url}' !")
         else:
+            logger(f"HTML_TEXT length invalid !")
+            logger(f"Returning blank soup !")
             soup = BeautifulSoup("", "lxml")
         return soup
 
     except Exception as e:
-        logger(f"Fatal error in get_soup() --> '{e}'")
+        logger(f"Fatal error in get_soup() --> '{e}'", log_type="err")
         return BeautifulSoup("", "lxml")
 
 
@@ -77,6 +87,7 @@ def get_soup(url: str) -> BeautifulSoup:
 def parse_nepse_data(soup: BeautifulSoup):
     try:
         # select td TAG that is inside tr TAG !
+        logger(f"Selecting tr > td !")
         data_table = soup.select("tr > td")
 
         # for encoding every company data in different list !
@@ -87,6 +98,7 @@ def parse_nepse_data(soup: BeautifulSoup):
         y = []
 
         # last list is not appended to y, for further use in PART-2 !
+        logger(f"started parsing data !")
         for i in range(11, len(data_table)):
             # remove spaces from data !
             col = data_table[i].text.strip()
@@ -102,7 +114,9 @@ def parse_nepse_data(soup: BeautifulSoup):
                     y.append(x)
                     x = [col]
                     c = 1
+        logger(f"Data parsed, len(company): {len(y)}")
 
+        logger(f"Creating final data !")
         # PART-2 !
         final_data = {
             "total_amount_rs": float(x[2].replace(",", "")),
@@ -123,9 +137,11 @@ def get_nepse_data(start_date, end_date) -> dict:
     :param end_date: dd-mm-yyyy
     :param start_date: dd-mm-yyyy
     """
+    logger(f"Splitting date !")
     start_date = start_date.split("-")
     end_date = end_date.split("-")
 
+    logger(f"Creating datetime object !")
     start_date = datetime.date(day=int(start_date[0]), month=int(start_date[1]), year=int(start_date[2]))
     end_date = datetime.date(day=int(end_date[0]), month=int(end_date[1]), year=int(end_date[2]))
 
@@ -140,25 +156,41 @@ def get_nepse_data(start_date, end_date) -> dict:
         final_data = {}
 
         # using all other functions create data in json format !
+        logger(f"Started creating link for every single date !")
         while start_date <= end_date:
-            # create source url !
-            link = f"http://nepalstock.com.np/todaysprice?startDate=" \
-                   f"{start_date.year}-{start_date.month}-{start_date.day}" \
-                   f"&stock-symbol=&_limit=500"
-            # grab soup for that url !
-            soup = get_soup(link)
-            # get company data from soup !
-            data = parse_nepse_data(soup=soup)
+            try:
+                # create source url !
+                link = f"http://nepalstock.com.np/todaysprice?startDate=" \
+                       f"{start_date.year}-{start_date.month}-{start_date.day}" \
+                       f"&stock-symbol=&_limit=500"
+                # grab soup for that url !
+                logger(f"Grabbing soup !")
+                soup = get_soup(link)
+                logger(f"Soup grabbed !")
+                # get company data from soup !
+                logger(f"getting parsed nepse data !")
+                data = parse_nepse_data(soup=soup)
+                logger(f"got parsed nepse data !")
 
-            # check if market was open on that date !
-            if data:
-                final_data[str(start_date)] = {"16:00:00": data}
-            else:
-                logger(f"Market seems to be closed in {str(start_date)} !", log_type="war")
+                # check if market was open on that date !
+                if data:
+                    logger(f"Market seems to be open in {str(start_date)} !", log_type="war")
+                    final_data[str(start_date)] = {"16:00:00": data}
+                else:
+                    logger(f"Market seems to be closed in {str(start_date)} !", log_type="war")
 
-            # increment date by 1 day !
-            start_date += delta
+                # increment date by 1 day !
+                start_date += delta
+                logger("--------------------------------------------------------", log_type="war")
+            except KeyboardInterrupt:
+                logger("CTRL C  pressed !", log_type="war")
+                return final_data
+            except Exception as e:
+                logger("--------------------------------------------------------", log_type="err")
+                logger(f"Fatal error in LOOP 'while start_date <= end_date' @get_nepse_data() -->  {e}", log_type="err")
+                logger("--------------------------------------------------------", log_type="err")
 
+        logger(f"Returned final data for --> {str(start_date)} !", log_type="war")
         return final_data
 
 
