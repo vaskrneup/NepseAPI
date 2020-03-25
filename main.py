@@ -201,9 +201,24 @@ def get_nepse_data(start_date, end_date) -> dict:
         logger("--------------------------------------------------------", log_type="err")
 
 
+def get_nepse_data_for_date(date: str = ""):
+    """
+    :param date: dd/mm/yyyy
+    :return: dict
+    """
+    if date:
+        return get_nepse_data(date, date)
+    else:
+        date = str(datetime.date.today()).split("-")
+        date.reverse()
+        date = "-".join(date)
+        return get_nepse_data(date, date)
+
+
 if __name__ == "__main__":
     try:
-        _ = get_nepse_data("19-02-2020", "23-02-2020")
+        # _ = get_nepse_data("19-02-2020", "23-02-2020")
+        _ = get_nepse_data_for_date()
         print(_)
     except:
         print("ERROR")

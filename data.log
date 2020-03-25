@@ -616,3 +616,59 @@ INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?
 INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-21&stock-symbol=&_limit=500 !
 DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
 WARNING:root:CTRL C  pressed !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 HTTP/1.1" 200 206206
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-2-19&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 177
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be open in 2020-02-19 !
+WARNING:root:--------------------------------------------------------
+WARNING:root:Returned final data for --> 2020-02-20 !
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+ERROR:root:--------------------------------------------------------
+ERROR:root:Fatal Error in get_nepse_data() --> day is out of range for month
+ERROR:root:--------------------------------------------------------
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+ERROR:root:--------------------------------------------------------
+ERROR:root:Fatal Error in get_nepse_data() --> day is out of range for month
+ERROR:root:--------------------------------------------------------
+INFO:root:Splitting date !
+INFO:root:Creating datetime object !
+INFO:root:Started creating link for every single date !
+INFO:root:Grabbing soup !
+INFO:root:Running get_html(url) with URL: 'http://nepalstock.com.np/todaysprice?startDate=2020-3-25&stock-symbol=&_limit=500' !
+INFO:root:Requesting data from http://nepalstock.com.np/todaysprice?startDate=2020-3-25&stock-symbol=&_limit=500 !
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): nepalstock.com.np:80
+DEBUG:urllib3.connectionpool:http://nepalstock.com.np:80 "GET /todaysprice?startDate=2020-3-25&stock-symbol=&_limit=500 HTTP/1.1" 200 88834
+INFO:root:Valid url http://nepalstock.com.np/todaysprice?startDate=2020-3-25&stock-symbol=&_limit=500 !
+INFO:root:Grabbed HTML text from http://nepalstock.com.np/todaysprice?startDate=2020-3-25&stock-symbol=&_limit=500 !
+INFO:root:HTML_TEXT length valid !
+INFO:root:Creating soup for 'http://nepalstock.com.np/todaysprice?startDate=2020-3-25&stock-symbol=&_limit=500'
+INFO:root:Soup Created for 'http://nepalstock.com.np/todaysprice?startDate=2020-3-25&stock-symbol=&_limit=500' !
+INFO:root:Soup grabbed !
+INFO:root:getting parsed nepse data !
+INFO:root:Selecting tr > td !
+INFO:root:started parsing data !
+INFO:root:Data parsed, len(company): 0
+INFO:root:Creating final data !
+INFO:root:got parsed nepse data !
+WARNING:root:Market seems to be closed in 2020-03-25 !
+WARNING:root:--------------------------------------------------------
+WARNING:root:Returned final data for --> 2020-03-26 !
