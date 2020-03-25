@@ -201,8 +201,9 @@ def get_nepse_data(start_date, end_date) -> dict:
         logger("--------------------------------------------------------", log_type="err")
 
 
-try:
-    _ = get_nepse_data("19-02-2020", "23-02-2020")
-    print(_)
-except:
-    print("ERROR")
+if __name__ == "__main__":
+    try:
+        _ = get_nepse_data("19-02-2020", "23-02-2020")
+        print(_)
+    except:
+        print("ERROR")
